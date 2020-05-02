@@ -1,0 +1,97 @@
+#welcome{
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  width: 100%;
+  height: 100vh;
+  .welcome-menu{
+    background: white;
+    width: 400px;
+    padding: 50px;
+    position: relative;
+    .logo{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      img{
+        max-width: 300px;
+        max-height: 300px;
+      }
+    }
+    .menu{
+      margin-bottom: 50px;
+      .menu-title{
+        text-transform: uppercase;
+        color: #009442;
+        font-weight: 700;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #e2eaef;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+      .links{
+        li{
+          a{
+            font-size: 1.1rem;
+           color:black;
+           font-weight: 700;
+           text-decoration: none;
+           margin-bottom: 1.4rem;
+           display: block;
+           transition: color .3s ease-in-out;
+           &:hover{
+             color: red;
+           }
+          }
+        }
+      }
+    }
+    .social-icons{
+      display: flex;
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        height: 30px;
+        width: 30px;
+        background: #c2c8cc;
+        font-size: .9rem;
+        border-radius: 50%;
+        margin-right: 10px;
+
+      }
+    }
+    .location{
+      align-self: center;
+      position: absolute;
+      bottom: 100px;
+      .address{
+        color: #7a8d99;
+        margin-bottom: 20px;
+      }
+        .phone-number{
+          a{
+          color: #009442;
+          font-size: 2rem;
+          font-weight: 700;
+          text-decoration: none;
+          }
+        }
+    }
+  }
+  .welcome-jumbo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    background: #3d6899; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #e2dc0b 0%,#0be56c 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #e2dc0b 0%,#0be56c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #e2dc0b 0%,#0be56c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    img{
+      width: 800px;
+      height: 800px;
+    }
+  }
+}
